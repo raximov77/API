@@ -1,0 +1,51 @@
+
+.hero-section {
+    padding-bottom: 75px;
+}
+
+.hero {
+    @include display($items:center,$space:0,$gap:206px);
+}
+
+.hero-title {
+    @include textStyle($FW:400,$FS:72px,$LH:72px,$MB:0,$CLR:$text-color);
+    width: 546px;
+    font-family: DM Serif Display;
+}
+.hero-form {
+    margin: 41px 0 16px 0;
+}
+.form-input {
+    width: 320px;
+    padding: 16px 40px 14px 27px;
+    outline: none;
+    border: none;
+    border-radius: 24px;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    background: rgb(251, 252, 254);
+}
+.form-input::placeholder{
+    @include textStyle($FW:700,$FS:15px,$LH:18px,$MB:0,$CLR:$text-color);
+    opacity: 0.5;
+    font-family: Public Sans;
+}
+.form-input:focus {
+    @include textStyle($FW:700,$FS:15px,$LH:18px,$MB:0,$CLR:$text-color);
+    font-family: Public Sans;
+}
+.form-btn {
+    margin-left: -35px;
+}
+.hero-text-double {
+    display: flex;
+    gap: 5px;
+}
+.hero-text, .hero-text-second {
+    @include textStyle($FW:700,$FS:15px,$LH:18px,$MB:0,$CLR:$text-color);
+    font-family: Public Sans;
+    opacity: 0.7;
+}
+.hero-text-second {
+    opacity: 1;
+}
+
