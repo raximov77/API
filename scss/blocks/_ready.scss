@@ -1,0 +1,14 @@
+
+.ready-section {
+    padding-bottom: 96px;
+}
+
+.ready-wrapper {
+    @include display($items:center,$space:space-between,$gap:0);
+}
+
+.ready-title {
+    @include textStyle($FW:400,$FS:48px,$LH:56px,$MB:0,$CLR:$text-color);
+    font-family: DM Serif Display;
+}
+

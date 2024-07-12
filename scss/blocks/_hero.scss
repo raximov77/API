@@ -6,7 +6,9 @@
 .hero {
     @include display($items:center,$space:0,$gap:206px);
 }
-
+.herp-content {
+    width: 546px;
+}
 .hero-title {
     @include textStyle($FW:400,$FS:72px,$LH:72px,$MB:0,$CLR:$text-color);
     width: 546px;
@@ -47,5 +49,16 @@
 }
 .hero-text-second {
     opacity: 1;
+}
+
+/* Tablet  */
+@media (max-width:957px) {
+    /* @include display($items:center,$space:space-between,$gap:0); */
+}
+
+
+@media (max-width:854px) {
+    /* @include display($items:center,$space:space-between,$gap:0); */
+    
 }
 

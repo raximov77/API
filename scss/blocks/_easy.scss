@@ -1,0 +1,19 @@
+
+.easy-section {
+    padding: 150px 0;
+}
+
+.easy-wrapper {
+    @include display($items:center,$space:0,$gap:0);
+}
+.easy-content {
+    width: 445px;
+}
+.easy-title {
+    @include textStyle($FW:400,$FS:48px,$LH:56px,$MB:24px,$CLR:$text-color);
+    font-family: DM Serif Display;
+}
+.easy-text {
+    @include textStyle($FW:400,$FS:15px,$LH:28px,$MB:0,$CLR:rgb(108, 130, 148));
+    font-family: Public Sans;
+}

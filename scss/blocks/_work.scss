@@ -1,0 +1,49 @@
+
+.work-section {
+    padding: 100px 0;
+    background: rgb(27, 38, 47);
+    background-image: url(../../images/work-bg.png);
+    background-repeat: no-repeat;
+}
+
+.work-wrapper {
+    @include display($items:center,$space:0,$gap:87px);
+}
+.work-content {
+    max-width: 445px;
+}
+.work-title {
+    @include textStyle($FW:400,$FS:48px,$LH:56px,$MB:0,$CLR:rgb(251, 252, 254));
+    font-family: DM Serif Display;
+}
+.work-text {
+    @include textStyle($FW:400,$FS:15px,$LH:28px,$MB:0,$CLR:rgb(251, 252, 254));
+    font-family: Public Sans;
+    opacity: 0.7;
+    margin: 24px 0 32px 0;
+}
+.work-about-us-link {
+    @include textStyle($FW:700,$FS:15px,$LH:18px,$MB:0,$CLR:rgb(251, 252, 254));
+    font-family: Public Sans;
+    width: 129px;
+    padding: 14px;
+    text-align: center;
+    border: none;
+    box-sizing: border-box;
+    border: 1px solid rgb(251, 252, 254);
+    border-radius: 24px;
+    background: transparent;
+    transition: all 0.3s linear;
+    &:hover {
+        background: rgb(255, 255, 255);
+        color: rgb(27, 38, 47);
+    }
+}
+.work-partners {
+    display: flex;
+    column-gap: 62px;
+    row-gap: 46px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}

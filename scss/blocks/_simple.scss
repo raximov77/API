@@ -1,0 +1,24 @@
+
+.simple-section {
+    padding-bottom: 146px;
+    background-image: url(../../images/simple-bg.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: contain;
+}
+
+.simple-wrapper {
+    @include display($items:center,$space:space-between,$gap:0);
+}
+.simple-content {
+    width: 445px;
+}
+.simple-title {
+    @include textStyle($FW:400,$FS:48px,$LH:56px,$MB:0,$CLR:$text-color);
+    font-family: DM Serif Display;
+}
+.simple-text {
+    @include textStyle($FW:400,$FS:15px,$LH:28px,$MB:0,$CLR:rgb(108, 130, 148));
+    font-family: Public Sans;
+    margin-top: 24px;
+}

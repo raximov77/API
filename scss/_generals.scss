@@ -4,8 +4,13 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
     // font-family: "--", sans-serif;
     background: rgb(237, 243, 248);
+    background-image: url(../images/body-bg.png);
+    background-repeat: no-repeat;
+    background-size: 640px 608px;
+    background-position: top right;
 }

@@ -1,0 +1,46 @@
+
+
+.site-footer {
+    padding: 31px 0;
+    background: rgb(27, 38, 47);
+}
+
+.footer-wrapper {
+    @include display($items:center,$space:space-between,$gap:0);
+}
+.footer-logo-wrapper {
+    @include display($items:center,$space:0,$gap:64px);
+}
+.footer-list {
+    @include display($items:center,$space:0,$gap:40px);
+}
+
+.footer-link {
+    opacity: 0.7;
+    @include textStyle($FW:700,$FS:15px,$LH:18px,$MB:0,$CLR:rgb(251, 252, 254));
+    font-family: Public Sans;
+    transition: all 0.3s linear;
+}
+.footer-link:hover {
+    opacity: 1;
+}
+
+.footer-icon {
+    @include display($items:center,$space:0,$gap:24px);
+}
+
+.fa-brands {
+    font-size: 24px;
+    color: rgb(251, 252, 254);
+    transition: all 0.3s linear;
+}
+
+.fa-facebook:hover {
+    color: rgb(218, 109, 151);
+}
+.fa-twitter:hover {
+    color: rgb(218, 109, 151);
+}
+.fa-linkedin:hover {
+    color: rgb(218, 109, 151);
+}

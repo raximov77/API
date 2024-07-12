@@ -1,0 +1,25 @@
+
+
+.finance-section {
+    padding-bottom: 96px;
+}
+.finance-wrapper {
+    @include display($items:center,$space:0,$gap:30px);
+}
+
+.finance-list {
+    width: 350px;
+    @include display($items:center,$space:0,$gap:0);
+    flex-direction: column;
+    text-align: center;
+}
+
+.finance-title {
+    @include textStyle($FW:700,$FS:18px,$LH:25px,$MB:0,$CLR:$text-color);
+    margin: 32px 0 16px 0;
+    font-family: Public Sans;
+}
+.finance-text {
+    @include textStyle($FW:400,$FS:15px,$LH:25px,$MB:0,$CLR:rgb(108, 130, 148));
+    font-family: Public Sans;
+}
