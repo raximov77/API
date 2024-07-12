@@ -11,7 +11,7 @@
     @include display($items:center,$space:space-between,$gap:0);
 }
 .simple-content {
-    width: 445px;
+    max-width: 445px;
 }
 .simple-title {
     @include textStyle($FW:400,$FS:48px,$LH:56px,$MB:0,$CLR:$text-color);
@@ -21,4 +21,38 @@
     @include textStyle($FW:400,$FS:15px,$LH:28px,$MB:0,$CLR:rgb(108, 130, 148));
     font-family: Public Sans;
     margin-top: 24px;
+}
+
+/* Tablet  */
+@media only screen and (max-width:768px){
+    .simple-section {
+        padding-bottom: 100px;
+        background-image: none;     
+    }
+    .simple-wrapper {
+        @include display($items:center,$space:space-between,$gap:0);
+        flex-direction: column-reverse;
+    }
+    .simple-content {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+
+/* Mobile */
+@media only screen and (max-width:375px){
+    .simple-section {
+        padding-bottom: 80px;
+        background-image: none;     
+    }
+    .simple-wrapper {
+        @include display($items:center,$space:space-between,$gap:0);
+        flex-direction: column-reverse;
+    }
+    .simple-content {
+        width: 100%;
+        text-align: center;
+    }
 }
