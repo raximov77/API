@@ -11,7 +11,7 @@
 }
 .hero-title {
     @include textStyle($FW:400,$FS:72px,$LH:72px,$MB:0,$CLR:$text-color);
-    width: 546px;
+    max-width: 546px;
     font-family: DM Serif Display;
 }
 .hero-form {
@@ -36,7 +36,8 @@
     font-family: Public Sans;
 }
 .form-btn {
-    margin-left: -35px;
+    position: relative;
+    left: 0px;
 }
 .hero-text-double {
     display: flex;
@@ -52,13 +53,64 @@
 }
 
 /* Tablet  */
-@media (max-width:957px) {
-    /* @include display($items:center,$space:space-between,$gap:0); */
+@media only screen and (max-width:957px){
+    .hero {
+        @include display($items:center,$space:space-between,$gap:0);
+    }
+}
+@media only screen and (max-width:854px){
+    .hero {
+        @include display($items:center,$space:space-between,$gap:48px);
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .hero-img {
+        width: 159px;
+        height: 300px;
+    }
+    .hero-title {
+        @include textStyle($FW:400,$FS:48px,$LH:56px,$MB:0,$CLR:$text-color);
+        width: 100%;
+        font-family: DM Serif Display;
+    }
+    .hero-form {
+        margin: 22px 0 16px;
+    }
+    .hero-text-double {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 
-@media (max-width:854px) {
-    /* @include display($items:center,$space:space-between,$gap:0); */
-    
+/* Mobile */
+@media only screen and (max-width:583px){
+    .hero-section {
+        padding-bottom: 80px;
+    }
+    .hero {
+        @include display($items:center,$space:space-between,$gap:24px);
+    }
+    .hero-img {
+        width: 127px;
+        height: 239px;
+    }
+    .hero-title {
+        @include textStyle($FW:400,$FS:32px,$LH:36px,$MB:0,$CLR:$text-color);
+        width: 100%;
+        font-family: DM Serif Display;
+    }
+    .hero-form {
+        width: 100%;
+        margin: 24px 0 16px;
+    }
+    .form-input {
+        width: 100%;
+    }
+    .form-btn {
+        width: 100%;
+        margin-top: 16px;
+        display: block;
+    }
 }
 

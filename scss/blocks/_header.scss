@@ -8,8 +8,7 @@
     
 }
 .header-navbar {
-    margin: 0px 468px 0 64px
-    ;
+    margin: 0px 468px 0 64px;
 }
 .navbar-list {
     @include display($items:center,$space:0,$gap:40px);
@@ -40,9 +39,9 @@
         background: rgb(218, 109, 151);
     }
 }
-.header-menu-btn {
+.header-hamburger-btn {
     display: none;
-    background: transparent;
+    background-color: transparent;
     border: none;
     cursor: pointer;
 }
@@ -52,8 +51,23 @@
     .site-header {
         padding: 40px 0 48px;
     }
-   /*  .header-logo-img {
+    .header-logo-img {
         width: 153px;
         height: 38px;
-    } */
+    }
+}
+
+
+
+/* Mobile */
+@media only screen and (max-width:718px){
+    .site-header {
+        padding: 40px 0 32px;
+    }
+    .navbar-list, .header-btn {
+        display: none;
+    }
+    .header-hamburger-btn {
+        display: block;
+    }
 }
